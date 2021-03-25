@@ -1,9 +1,13 @@
-import "./App.css";
-import BasicInfo from "./Components/BasicInfo";
-import MenuInfo from "./Components/MenuInfo";
+import Home from "./Components/Home";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="layout bg-gradient-to-r from-transparent py-4">
+      <div className="box-container shadow-lg text-base rounded-md p-8">
+        <Home />
+      </div>
+    </div>
+  );
 }
 
 export default App;

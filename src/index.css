@@ -1,13 +1,47 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@font-face {
+  font-family: "Google Sans";
+  src: local("Google Sans"),
+    url(./assets/fonts/GoogleSansTTF/GoogleSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-weight: 900;
+  src: local("Google Sans"),
+    url(./assets/fonts//GoogleSansTTF/GoogleSans-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue"),
+    url(./assets/fonts/Bebas_Neue//BebasNeue-Regular.ttf) format("opentype");
+}
+
+.layout {
+  background-color: #1a202c;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.box-container {
+  margin: auto;
+  background-color: #2d3748;
+  color: #cbd5e0;
+  width: 28rem;
+  height: 48rem;
+  max-width: 28rem;
+  max-height: 48rem;
 }
