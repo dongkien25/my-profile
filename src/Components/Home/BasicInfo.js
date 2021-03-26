@@ -7,8 +7,13 @@ import {
   GithubOutlined,
   SkypeFilled,
 } from "@ant-design/icons";
-import { Tag } from "antd";
+import ReactIcon from "assets/images/React.svg";
+import VueIcon from "assets/images/Vue.svg";
+import JavaScriptIcon from "assets/images/JavaScript.svg";
+import SassIcon from "assets/images/SASS.svg";
+import { Tag, Typography } from "antd";
 import Avatar from "assets/images/origami.jpg";
+const { Title } = Typography;
 
 function BasicInfo() {
   return (
@@ -36,40 +41,58 @@ function BasicInfo() {
             được tất cả nhưng lại chẳng có nhau? Ta có vui, hay quên mau.
           </p>
         </div>
-        <div className="social-group w-3/4 justify-between">
-          <a href="https://twitter.com/">
-            <Tag
-              icon={<TwitterOutlined />}
-              color="#55acee"
-              className="social-icon"
-            ></Tag>
-          </a>
-          <a href="https://twitter.com/">
-            <Tag
-              icon={<GithubOutlined />}
-              color="#e94e31"
-              className="social-icon"
-            ></Tag>
-          </a>
-          <a href="https://twitter.com/">
-            <Tag
-              icon={<FacebookFilled />}
-              color="#3b5999"
-              className="social-icon"
-            ></Tag>
-          </a>
+        <div className="social flex w-full">
+          <div className="social-group flex w-2/3 justify-between m-auto">
+            <a href="https://twitter.com/">
+              <Tag
+                icon={<TwitterOutlined />}
+                color="#55acee"
+                className="social-icon"
+              ></Tag>
+            </a>
+            <a href="https://twitter.com/">
+              <Tag
+                icon={<GithubOutlined />}
+                color="#e94e31"
+                className="social-icon"
+              ></Tag>
+            </a>
+            <a href="https://twitter.com/">
+              <Tag
+                icon={<FacebookFilled />}
+                color="#3b5999"
+                className="social-icon"
+              ></Tag>
+            </a>
 
-          <a href="https://twitter.com/">
-            <Tag
-              icon={<SkypeFilled />}
-              color="#29aef5"
-              className="social-icon"
-            ></Tag>
-          </a>
+            <a href="https://twitter.com/">
+              <Tag
+                icon={<SkypeFilled />}
+                color="#29aef5"
+                className="social-icon"
+              ></Tag>
+            </a>
+          </div>
         </div>
-        <div className="skills">
-          <h3>Skills</h3>
-          <div className="skill-group"></div>
+
+        <div className="skills w-full mt-7">
+          <Title level={4} code className="text-left skill-title">
+            Skills
+          </Title>
+          <div className="skill-group flex w-full justify-between mt-5">
+            <Tag color="cyan" className="skill-icon">
+              <img src={ReactIcon} alt="" /> ReactJS
+            </Tag>
+            <Tag color="green" className="skill-icon">
+              <img src={VueIcon} alt="" /> VueJS
+            </Tag>
+            <Tag color="gold" className="skill-icon">
+              <img src={JavaScriptIcon} alt="" /> JavaScript
+            </Tag>
+            <Tag color="magenta" className="skill-icon">
+              <img src={SassIcon} alt="" /> SCSS
+            </Tag>
+          </div>
         </div>
       </div>
     </div>
